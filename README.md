@@ -154,7 +154,7 @@ Please don't interrupt the script
 ***
 ### Note
 
-If you can't show the cuda version, like **N/N**.  
+If you can't show the cuda version, like **N/A**.  
 Make sure install cuda, then you can find it in ``/usr/local/cuda-*.*`` .  
 Add cuda's path to bashrc by following commands below:
 
