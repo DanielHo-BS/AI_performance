@@ -167,5 +167,5 @@ In ``.bachrc`` add these lines:
 
 Finally, refresh and check the cuda:
 
-    source~ ~/.bachrc
+    source~ ~/.bashrc
     nvcc -V
