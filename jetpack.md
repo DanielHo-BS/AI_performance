@@ -8,7 +8,7 @@ And it copied from [Nvidia Jetpack](https://docs.nvidia.com/jetson/jetpack/insta
 ## Install Jetpack
 Assuming your Jetson developer kit has been flashed with and is running **L4T 32.3.1** or higher,the following commands wil install all **JetPack**:
 
-    sudo apt update
+    sudo apt update  
     sudo apt install nvidia-jetpack
 
 ## To view nvidia-jetpack

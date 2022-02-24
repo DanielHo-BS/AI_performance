@@ -15,22 +15,22 @@ Using the device **ROScube-X**.
 You can create a [Virtual Environment](https://docs.nvidia.com/deeplearning/frameworks/install-tf-jetson-platform/index.html#install_multiple_versions_tensorflow) to manage your local environment.  
 If you want different version python or tensorflow.
 ***
-1. Install [jetpack](https://docs.nvidia.com/jetson/jetpack/install-jetpack/index.html)
+## 1. Install [jetpack](https://docs.nvidia.com/jetson/jetpack/install-jetpack/index.html)
 
-2. Install [tensorflow](https://docs.nvidia.com/deeplearning/frameworks/install-tf-jetson-platform/index.html)
+## 2. Install [tensorflow](https://docs.nvidia.com/deeplearning/frameworks/install-tf-jetson-platform/index.html)
 
-3. Install ai-benchmark  
+## 3. Install ai-benchmark  
 
     pip install ai-benchmark
 
-4. Open and write down the code in ``test.py``  
+## 4. Open and write down the code in ``test.py``  
 
     from ai_benchmark import AIBenchmark  
     results = AIBenchmark().run()
 
-5. Run the ``test.py``  
+## 5. Run the ``test.py``  
 
-    ./test.py
+    sudo python3 ./test.py
 
 # Result
 
@@ -155,17 +155,17 @@ Please don't interrupt the script
 ### Note
 
 If you can't show the cuda version, like **N/A**.  
-Make sure install cuda, then you can find it in ``/usr/local/cuda-*.*`` .  
-Add cuda's path to bashrc by following commands below:
+### i. Make sure install cuda, then you can find it in ``/usr/local/cuda-*.*`` .  
+### ii. Add cuda's path to ``.bashrc`` by following commands below:
 
     gedit ~/.bashrc
 
-In ``.bachrc`` add these lines:
+### iii. In ``.bachrc`` add these lines:
 
     export PATH=/usr/local/cuda-10.2/bin:$PATH
     export LD_LIBRARY_PATH=/usr/local/cuda-10.2/lib64:$LD_LIBRARY_PATH
 
-Finally, refresh and check the cuda:
+### iv. Finally, refresh and check the cuda:
 
-    source~ ~/.bashrc
+    source ~/.bashrc
     nvcc -V
