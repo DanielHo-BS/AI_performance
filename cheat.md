@@ -13,3 +13,5 @@ TensorFlow: 2.6
 # [Nvidia-driver Installation](https://www.cyberciti.biz/faq/ubuntu-linux-install-nvidia-driver-latest-proprietary-driver/)
 
 How to install nvidia-driver on ubuntu.
+
+Nvidia-driver: 470
