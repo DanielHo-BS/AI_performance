@@ -1,0 +1,34 @@
+*  TF Version: 2.6.0
+*  Platform: Linux-5.13.0-35-generic-x86_64-with-glibc2.29
+*  CPU: N/A
+*  CPU RAM: 31 GB
+*  GPU/0: NVIDIA GeForce GTX 1050
+*  GPU RAM: 1.1 GB (Max 2G)
+*  CUDA Version: 11.4
+*  CUDA Build: V11.4.152
+
+
+1.1 - inference | batch=50, size=224x224: 148.0 ± 0.8 ms
+
+2.1 - inference | batch=20, size=346x346: 240 ± 9 ms
+
+3.1 - inference | batch=10, size=346x346: 247 ± 1 ms
+
+4.1 - inference | batch=10, size=346x346: 317 ± 1 ms
+
+5.1 - inference | batch=10, size=346x346: 169 ± 2 ms
+
+6.1 - inference | batch=10, size=256x256: 230 ± 4 ms
+
+7.1 - inference | batch=20, size=224x224: 386 ± 11 ms
+
+8.1 - inference | batch=10, size=512x512: 1191 ± 4 ms
+8.2 - inference | batch=1, size=1536x1536: 382 ± 2 ms
+
+9.1 - inference | batch=10, size=256x256: 350 ± 2 ms
+9.2 - inference | batch=1, size=1024x1024: 558 ± 2 ms
+
+
+Rank: 
+GeForce GTX 1050 Laptop (Mobile)
+150		233		244		310		160		220		417		428	392		601	965	
