@@ -1,7 +1,14 @@
+import tensorflow as tf
 from ai_benchmark import AIBenchmark
-results = AIBenchmark().run()
-##save the result to .txt
-with open('result.txt', 'a') as f:
-    f.write("\nDevice Inference Score: " + str(results.inference_score))
-    f.write("Device Training Score: " + str(results.training_score))
-    f.write("Device AI Score: " + str(results.ai_score) + "\n")
+
+
+## GPU Memory Setting
+"""
+gpu_options = tf.compat.v1.GPUOptions(allow_growth = True)
+sess = tf.compat.v1.Session(config = tf.compat.v1.ConfigProto(gpu_options = gpu_options))
+"""
+
+benchmark = AIBenchmark()
+results = benchmark.run() ##run all (training + inference)
+# results = benchmark.run_inference() ##run inference only (GPU ram >= 2G)
+# results = benchmark.run_training() ##run training only (GPU ram >= 4G)
